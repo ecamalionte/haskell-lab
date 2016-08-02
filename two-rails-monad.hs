@@ -24,16 +24,16 @@ flow mrequest = do
 
 parsecontent content = (return . words) content
 
-validate params =
-  case params of
-    [] -> fail "request is blank"
-    ["hacker"] -> fail "Oh Lord! It is an Attack!!!!"
-    params -> return params
+validate [] = fail "request is blank"
+validate ["hacker"] = fail "Oh Lord! It is a Attack"
+validate params = return params
+
 
 findProducts params = do
   -- getDBconnection
   let result = fromRepository params
   return result
+
 
 fromRepository params = do
   if elem "/products" params
