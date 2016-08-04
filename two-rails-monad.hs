@@ -15,9 +15,10 @@ validRequest = Success "some http request /products"
 hackerattack = Success "hacker"
 blankrequest = Success ""
 
+
 flow mrequest = do
   content <- mrequest
-  params <-  parsecontent content
+  params <- parsecontent content
   validate params
   response <- findProducts params
   return response
@@ -25,15 +26,13 @@ flow mrequest = do
 parsecontent content = (return . words) content
 
 validate [] = fail "request is blank"
-validate ["hacker"] = fail "Oh Lord! It is a Attack"
+validate ["hacker"] = fail "Oh Lord! It is an Attack"
 validate params = return params
 
-
 findProducts params = do
-  -- getDBconnection
+  --getDBconnection
   let result = fromRepository params
   return result
-
 
 fromRepository params = do
   if elem "/products" params
