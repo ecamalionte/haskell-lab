@@ -5,4 +5,5 @@ quicksort (x:xs) = (quicksort lesser) ++ [x] ++ (quicksort greater)
         greater = filter (>= x) xs
 
 
-qsort (p:xs) = qsort [x | x<-xs, x<p] ++ [p] ++ qsort [x | x<-xs, x>=p]
+qsort [] = []
+qsort (x:xs) = qsort [l | l<-xs, l < x] ++ [x] ++ qsort [r | r <- xs, r >= x]

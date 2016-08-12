@@ -15,7 +15,6 @@ validRequest = Success "some http request /products"
 hackerattack = Success "hacker"
 blankrequest = Success ""
 
-
 flow mrequest = do
   content <- mrequest
   params <- parsecontent content
