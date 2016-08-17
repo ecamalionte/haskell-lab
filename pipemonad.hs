@@ -9,7 +9,7 @@ wc_l xs = (return . length) xs
 main = cat "test.txt" >>=
   (\a -> grep "error" a) >>=
     (\b -> wc_l b) >>=
-      (\c -> return c)
+      (\c -> return a)
 
 main2 = do
   content <- cat "test.txt"
