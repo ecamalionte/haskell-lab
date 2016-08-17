@@ -20,7 +20,3 @@ person = Person 12 "Eric Camalionte" ["surf", "skate"]
 mymap _ _ [] = []
 mymap f g (a:b:xs) = f a : g b : mymap f g xs
 
-
-
-
-
