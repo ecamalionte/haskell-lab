@@ -1,8 +1,8 @@
 data Car = Nooo | Car { company :: String
-               , model :: String
-               , year :: Int
-               , other :: [Car]
-               } deriving Show
+                      , model :: String
+                      , year :: Int
+                      , other :: [Car]
+                      } deriving Show
 
 data Tree a = Leaf a | Branch (Tree a) (Tree a) deriving Show
 mytree = Branch ( Leaf 3) ( Branch (Leaf 4) (Leaf 5) )
