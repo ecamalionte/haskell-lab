@@ -1,3 +1,20 @@
+{--
+ Types:
+ Num = Int | Float | Double
+ Char, [Char]
+ Bool = True | False
+--}
+-- Contexto Estático e Inferência
+-- Funções Simples: (+) 1 1
+-- Lambda
+-- Listas: 2:[1,2,4,5]++[2]
+-- head e tail
+-- Sugar
+-- take, filter, map
+-- ListComprehensions
+-- Recursão
+-- Quicksort
+
 l = [1..10]
 listainfinita = [1..]
 
