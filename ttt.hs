@@ -8,11 +8,12 @@
 -- Funções Simples: (+) 1 1
 -- Lambda
 -- Listas: 2:[1,2,4,5]++[2]
+-- ListComprehensions
+-- filter
+-- Recursão
 -- head e tail
 -- Sugar
--- take, filter, map
--- ListComprehensions
--- Recursão
+-- take
 -- Quicksort
 
 l = [1..10]
