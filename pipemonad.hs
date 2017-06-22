@@ -16,7 +16,3 @@ main2 = do
   greped  <- grep "error" content
   count   <- wc_l greped
   return count
-
-
--- aklsdjflkajsdkf teste git
-
